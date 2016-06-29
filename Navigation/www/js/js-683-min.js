@@ -4,12 +4,20 @@
  * and open the template in the editor.
  */
 $(document).ready(function () {
+    
+    if($(window).innerWidth() < 950){
+        setSubNavImgHide(false);    
+        $("#c-nav").css("position","fixed");
+    }else{
+       setSubNavImgHide(true);
+       setULCenter(); 
+    }
+    
+    setImageCenter();
+    
     $("#c-button").click(function (){
        $("#c-nav ul").toggle();
     });
-    setSubNavImgHide(true);
-    setImageCenter();
-    setULCenter();
 });
 
 function setImageCenter() {
@@ -41,15 +49,24 @@ function setSubNavImgHide(bool) {
 
 $(window).resize(function (){
     $("#image-slide img").css("width","100%");
-   if($(window).innerWidth() < 900){
+    $("#c-nav ul").show();
+   if($(window).innerWidth() < 950){
         setSubNavImgHide(false);
+        $("#c-nav ul").hide();
+        $("#c-nav").css("position","fixed");
     }else{
-        setSubNavImgHide(true);
+        if($(document).scrollTop() > 150){
+            $("#sub-c-nav").css("display","block");
+//            setSubNavImgHide(false);
+        }else{
+            setULCenter();
+            setSubNavImgHide(true);
+        }
     }     
 });
 
 $(window).scroll(function () {
-    if($(window).innerWidth() < 900){
+    if($(window).innerWidth() < 950){
         
     }else{
         if ($(document).scrollTop() > 150) {

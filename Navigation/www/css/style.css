@@ -22,6 +22,22 @@ body, ul{
     width: 100%;
 }
 
+#logo{
+    z-index: -1 !important;
+    /*display: block;*/
+    /*position: relative;*/
+}
+
+#logo div{
+     width: 100%;
+    height: 50px;
+    background-color: #FFFFFF !important;
+    padding: 10px;
+    overflow: hidden;
+    opacity: 0.8;
+    
+}
+
 #image-slide{
     z-index: -2;
 }
@@ -67,6 +83,11 @@ body, ul{
 
 #c-button{
     display: none;
+}
+
+#c-nav ul li a span{
+    display: inline-block;
+    width: 20px;
 }
 
 
