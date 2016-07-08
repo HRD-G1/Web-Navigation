@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" type="text/css" href="responsive.css"/>
+
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.6.3/css/font-awesome.css"/>
+        <script>
+            $(document).ready(function () {
+                mydate();
+            });
+
+            function mydate() {
+                $('input[name="birthdate"]').daterangepicker({
+                    singleDatePicker: true,
+                    showDropdowns: true
+                },
+                function (start, end, label) {
+                    var years = moment().diff(start, 'years');
+                    alert("You are " + years + " years old.");
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <h2 class="small-heading"><p>PERSONAL DATA</p></h2>
+                <div class="col-md-4 col-xs-12">
+                    <div id="border-profile">
+                        <!--<label class="tag label label-primary">Photo Profile</label>-->
+                        <img id="profile" src="img/occupation-32-512.png" class="img-responsive img-circle"> <br>
+                        <center><span>Devid Henderson | Spring Developer</span></center>
+                        <center><button class="btn btn-default fa fa-star-o"> Add To Favorite</button></center>
+                    </div>
+                </div>
+                <div class="col-md-8 col-xs-12">
+                    <div id="border-profile">
+                        <!--<label class="tag label label-primary">Personal Profile</label>-->
+                        <table class="table table-hover">
+                            <tr>
+                                <th style="width: 130px">Name</th>
+                                <th style="width: 10px">:</th>
+                                <td>
+                                    <input type="text" name="name" value="Devid Henderson" class="form-control" placeholder="Name">    
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Gender</th>
+                                <th>:</th>
+                                <td>
+                                    <select class="form-control" name="gender">
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Marital Status</th>
+                                <th>:</th>
+                                <td>
+                                    <select class="form-control" name="marital-status">
+                                        <option>Single</option>
+                                        <option>Married</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Nationality</th>
+                                <th>:</th>
+                                <td>
+                                    <input type="text" name="nationality" class="form-control" value="Cambodian" placeholder="Nationality">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Date of Birth</th>
+                                <th>:</th>
+                                <td>
+                                    <input type="date" name="dob" value="1993/01/02"/>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Place of Birth</th>
+                                <th>:</th>
+                                <td>
+                                    <input type="text" name="pob" class="form-control" value="Phnom Penh, Cambodia" placeholder="Place of Birth">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>Current Address</th>
+                                <th>:</th>
+                                <td>
+                                    <input type="text" name="c-address" class="form-control" value="Phnom Penh, Cambodia" placeholder="Current Address">
+                                </td>
+                            </tr>
+
+                            <!--                            <tr>
+                                                            <th>Phone</th>
+                                                            <th>:</th>
+                                                            <td>023 030 994</td>
+                                                        </tr>-->
+
+                            <!--                            <tr>
+                                                            <th>Email</th>
+                                                            <th>:</th>
+                                                            <td style="text-wrap: avoid">henderson@gmail.com</td>
+                                                        </tr>-->
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <!--( A ) Education Section -->
+            <div class="row clearfix" style="padding-top: 20px; padding-bottom: 20px;">
+                <div class="b-border col-md-6 col-md-12">
+                    <h2 class="small-heading"><p>EDUCATION</p></h2>
+                    <div class="education-container col-md-12 col-xs-12">
+
+                        <!-- Single Education Item [ END ] -->
+
+                        <div class="item">
+                            <div class="bullet hidden-xs">
+                            </div>
+                            <div class="education-content">
+                                <h3><input type="text" class="form-control" name="edu" value="University of Graphics/ October 2011 - March 2013"></h3>
+                                <textarea class="form-control" rows="5" id="comment">Add Description Here.</textarea>
+                            </div>
+                        </div>
+
+                        <!-- Single Education Item [ END ] -->
+
+                        <div class="item">
+                            <div class="bullet hidden-xs">
+                            </div>
+                            <div class="education-content">
+                                <h3><input type="text" class="form-control" name="edu" value="University of Graphics/ October 2011 - March 2013"></h3>
+                                <textarea class="form-control" rows="5" id="comment">Add Description Here.</textarea>
+                            </div>
+                        </div>
+
+                        <!-- Single Education Item [ END ] -->
+                    </div>
+                    <input type="button" onclick="alert(1)">
+                </div>
+
+                <div class="b-border col-md-6 col-md-12">
+                    <h2 class="small-heading"><p>EXPERIENCE</p></h2>
+                    <div class="education-container col-md-12 col-xs-12">
+
+                        <!-- Single Education Item [ END ] -->
+
+                        <div class="item">
+                            <div class="bullet hidden-xs">
+                            </div>
+                            <div class="education-content">
+                                <h3><input type="text" class="form-control" name="edu" value="University of Graphics/ October 2011 - March 2013"></h3>
+                                <textarea class="form-control" rows="5" id="comment">Add Description Here.</textarea>
+                            </div>
+                        </div>
+
+                        <!-- Single Education Item [ END ] -->
+
+                        <div class="item">
+                            <div class="bullet hidden-xs">
+                            </div>
+                            <div class="education-content">
+                                <h3><input type="text" class="form-control" name="edu" value="University of Graphics/ October 2011 - March 2013"></h3>
+                                <textarea class="form-control" rows="5" id="comment">Add Description Here.</textarea>
+                            </div>
+                        </div>
+
+                        <!-- Single Education Item [ END ] -->
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row" style="clear: both">
+                <div class="b-border col-md-4 col-xs-12">
+                    <h2 class="small-heading"><p>SKILL</p></h2>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                             aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                            <p class="text-left">40% JAVA EE</p>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                            <p class="text-left">50% JAVA SE</p>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                             aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                            <p class="text-left">60% C#</p>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <p class="text-left">70% ASP.NET</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="b-border col-md-4 col-xs-12">
+                    <h2 class="small-heading"><p>LANGUAGE</p></h2>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+                             aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                            <p class="text-left">100% KHMER</p>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60"
+                             aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                            <p class="text-left">60% ENGLISH</p>
+                        </div>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70"
+                             aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            <p class="text-left">70% KOREAN</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="b-border col-md-4 col-xs-12 text-center">
+                    <h2 class="small-heading"><p>CONTACT</p></h2>
+                    <h5> <span class="fa fa-envelope"></span> D.Henderson@gmail.com</h5>
+                    <h5> <span class="fa fa-phone"></span> 012 023 332</h5>
+                    <h5> <a href="#"> <span class="fa fa-send"></span> Sent an Email</a> </h5>
+                </div>
+            </div>
+
+            <!--Fill Docuemnt-->
+            <div class="row"> 
+
+            </div>
+        </div> 
+    </body>
+</html>
+
