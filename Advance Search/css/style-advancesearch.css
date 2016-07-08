@@ -1,0 +1,125 @@
+#browse
+{
+	border: 1px solid #ddd;
+	box-shadow: 0px 0px 0px 2px;
+	box-shadow: 3px 5px 5px #888888;
+	border-top: 0px ;
+	padding-top: 10px;
+}
+#browse-title,#advance-title
+{
+	background-color: #666;
+	box-shadow: 3px 5px 5px #888888;
+	color: white;
+	border: 1px solid #ddd;
+	text-transform: uppercase;
+	border-bottom: 0px;
+	padding: 7px;
+	padding-left: 20px;
+	font-size: 20px;
+	border-radius: 10px 10px 0px 0px;
+}
+#browse-title:hover,#advance-title
+{
+	cursor: pointer;
+}
+.sub 
+{
+	color: #000;
+}
+.sub:hover
+{
+	padding-left: 0px;
+	
+}
+#advance-search
+{
+	border: 2px solid  #ddd;
+	box-shadow: 3px 5px 5px #888888;
+	border-radius: 0px 0px 10px 10px;
+	border-top: 0px ;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 17px;
+}
+img
+{
+	display: inline;
+	float: left;
+}
+.input-text-select
+{
+	font-size: 20px;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+.skill-box
+{
+	font-size: 20px;
+	width: 100%;
+}
+#slider-range-salary,#slider-experience
+{
+	margin-left: 8px;
+}
+.frolies
+{
+	width: 100px;
+	
+}
+.profile-pic
+{
+	box-shadow: 3px 5px 5px #888888;
+	position: relative;
+}
+.search
+{
+	background-color: #666;
+	color: white;
+}
+.search:hover
+{
+	color: #ddd;
+}
+.sub-number
+{
+	color: #651FFF;
+}
+#experience-range
+{
+	color: #666;
+	width: 163px;
+}
+hr
+{
+	display: none;
+}
+.expert-list-title
+{
+	box-shadow: 3px 5px 5px #888888;
+}
+.expert-name
+{
+	font-size: 20px;
+	color: #666;
+	line-height: 10px;
+}
+.expert-sub
+{
+	color: #651FFF;
+	line-height: 10px;
+}
+.expert-short-info h6
+{
+	font-size: 15px;
+}
+.expert-short-info
+{
+	margin-top: 50px;
+}
+.btn-detail
+{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
